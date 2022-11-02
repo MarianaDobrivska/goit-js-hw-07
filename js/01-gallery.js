@@ -7,6 +7,7 @@ const galleryEl = document.querySelector(".gallery");
 
 galleryItems.forEach((item) => {
   const newDiv = document.createElement("div");
+  newDiv.classList.add("gallery__item");
   const newMarkup = `<a class="gallery__link" href=${item.original}>
               <img
                 class="gallery__image"
